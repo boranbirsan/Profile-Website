@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import {Route, Switch, useLocation} from 'react-router-dom';
+
 import './App.css';
 
+import Header from './Shared/Header';
+import Footer from './Shared/Footer';
+
+import Home from './Home/Home';
+import CV from './CV/CV';
+import NotFound from './Shared/NotFound';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const location = useLocation();
+	return (
+		<div id='main'>
+			<Header path={location.pathname}/>
+			<Switch>
+				<Route exact path="/"><Home/></Route>
+				<Route exact path="/resume"><CV/></Route>
+				<Route exact path="/projects"></Route>
+				<Route exact path="/contact"></Route>
+				<Route component={NotFound} />
+			</Switch>
+			<Footer/>
+		</div>
+	);
 }
 
 export default App;

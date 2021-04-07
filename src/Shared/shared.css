@@ -1,0 +1,44 @@
+#header
+{
+    width: 60%;
+    margin: auto;
+    color: #006990;
+    padding: 50px 0px 100px;
+}
+
+#name-title
+{
+    font-family: 'Noticia Text', serif;
+    font-weight: bold;
+}
+
+#name-title h1
+{
+    font-size: 43px;
+    margin: 0px;
+}
+
+#name-title p
+{
+    font-size: 18px;
+    margin: 0px;
+}
+
+.link, .link:visited
+{
+    font-family: 'Noticia Text', serif;
+    font-weight: bold;
+    margin: 0px 20px;
+    color: #009ed0;
+    text-decoration: none;
+}
+
+.link:hover
+{
+    color: #79af45;
+}
+
+.current
+{
+    color: #79af45 !important;
+}
