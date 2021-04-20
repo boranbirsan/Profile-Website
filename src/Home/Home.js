@@ -8,7 +8,7 @@ function Home() {
 		<div className='wrapper'>
 			<Grid container spacing={3} justify='center'>
 				<Grid item>
-					<img id='profile' src={profile} />
+					<img id='profile' src={profile} alt=''/>
 				</Grid>
 				<Grid item>
 					<div className='noticia-font'>

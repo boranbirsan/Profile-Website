@@ -1,12 +1,12 @@
-import {Grid} from '@material-ui/core';
+import './Footer.css';
 
 function Footer(){
 	return (
-		<div id='footer'>
+		<footer id='footer'>
 			<div id='bottom'>
 
 			</div>
-		</div>);
+		</footer>);
 }
 
 export default Footer;

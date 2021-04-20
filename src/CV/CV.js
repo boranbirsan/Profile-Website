@@ -2,7 +2,6 @@
 import './CV.css';
 
 import { NoteOutlined } from '@material-ui/icons';
-import { Icon } from '@material-ui/core';
 
 function CV() {
 	return(
