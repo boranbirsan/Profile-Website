@@ -1,16 +1,17 @@
 import './Home.css';
 
-import profile from '../Images/Best_sq.JPG';
+import profile from '../Images/Best_sq_sm.jpg';
+
 import { Grid } from '@material-ui/core';
 
 function Home() {
 	return (
 		<div className='wrapper'>
 			<Grid container spacing={3} justify='center'>
-				<Grid item>
+				<Grid item md={6}>
 					<img id='profile' src={profile} alt=''/>
 				</Grid>
-				<Grid item>
+				<Grid item md={6}>
 					<div className='noticia-font'>
 						<h3 className='font_3'>
 							<span>Hello,</span>

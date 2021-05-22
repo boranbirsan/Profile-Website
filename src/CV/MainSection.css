@@ -1,0 +1,48 @@
+.main-section 
+{
+    display: inline-flex;
+    width: 100%;
+}
+
+.main-section .title-section
+{
+    display: flex;
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    background-color: #747575;
+    border-radius: 50%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-section
+{
+    margin: 0;
+    padding-left: 20px;
+    width: 430px;
+}
+
+.title-section .text
+{
+    width: 105px;
+}
+
+.title-section .text h6
+{
+    font: normal normal normal 17px 'Noticia Text',serif;
+    margin: 0;
+}
+
+.not-bottom
+{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5fa7c2;
+    margin-bottom: 25px;
+}
+
+.bottom
+{
+    padding-bottom: 175px;
+}

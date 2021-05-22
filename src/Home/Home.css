@@ -1,5 +1,6 @@
 .wrapper {
-    width: 60%;
+    width: fit-content;
+    max-width: 80%;
     margin: auto;
     padding: 0px 0px;
 }
@@ -8,8 +9,8 @@
 {
     border-radius: 50%;
     margin-top: 50px;
-    max-width: 380px;
-    max-height: 380px;
+    max-width: 75vw;
+    height: auto;
 }
 
 .noticia-font
@@ -18,9 +19,9 @@
     color: #006990;
 }
 
-.font_3 { font-size: 62px; margin: 0; }
+.font_3 { font-size: 4.5vw; margin: 0; }
 
-.font_4 { font-size: 46px; margin: 0; font-weight: normal; }
+.font_4 { font-size: 3vw; margin: 0; font-weight: normal; }
 
 .link-circles
 {
@@ -35,7 +36,9 @@
     border-radius: 50%;
     color: white;
     height: 130px;
+    max-height: 25vw;
     width: 130px;
+    max-width: 25vw;
 
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
