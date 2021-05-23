@@ -1,6 +1,7 @@
 #main {
   background-color: #fcdcad;
   min-height: 100vh;
+  height: fit-content;
   min-width: 100%;
 }
 

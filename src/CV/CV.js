@@ -7,7 +7,7 @@ import Listing from './Listing';
 
 function CV() {
 	return (
-		<div id='cv-wrapper' className='test'>
+		<div id='cv-wrapper'>
 			<div id='main-panel'>
 				<h2>RESUME</h2>
 				<MainSection title='Professional Info' styleName='not-bottom'>
@@ -38,7 +38,7 @@ function CV() {
 				</MainSection>
 				<MainSection title="Education" styleName='bottom'>
 					<Listing
-						title='Özyeğin University'
+						title='Özyeğin University - B.S. in Computer Science'
 						location='Istanbul, Turkey'
 						dates='09/2015 - 01/2020'
 					>
