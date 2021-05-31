@@ -1,6 +1,6 @@
 import './CV.css';
 
-import { NoteOutlined, Language, PowerSettingsNew, Build } from '@material-ui/icons';
+import { Language, PowerSettingsNew, Build } from '@material-ui/icons';
 
 import MainSection from './MainSection';
 import Listing from './Listing';
@@ -10,10 +10,10 @@ function CV() {
 		<div id='cv-wrapper'>
 			<div id='main-panel'>
 				<h2>RESUME</h2>
-				<MainSection title='Professional Info' styleName='not-bottom'>
+				<MainSection title='Professional Info'>
 					<p className='font-1'>My years of experience paving my own path starts pretty early in my life, before high school even ended. During high school, I very quickly became bored of the education that they were providing and by 11th grade decided that it was not worth my efforts. I dropped out of high school and started making money on my own working a few entry level jobs around town. I received my GED, worked and rented a place of my own with a few friends, and I quickly learned what it means to make it in the real world. I focused on these experiences to learn what it means to work in teams, how to work in a corporate setting, how to manage a household, pay bills and taxes, and generally function as an adult all within the ages of 17-20 years old. I got my taste of the working/real life very early on and I would consider myself very experienced in dealing with adversity. Around the age of 20, I realized that making it on my own was a long and pain staking process and eventually my life began to stagnate in the last few months. Before I let my life stagnate, i decided that it was in my best interest to use my GED to earn a degree, as just a high school diploma will not grant me the respect that I desired. After 20, i spent the next few years getting my diploma in computer science, working at places like AirTies, and start-ups like Flank Esports. The information and experienced I've gained before, during and after university have been greatly invaluable. And even things that most people might consider mistakes or bad decisions have provided my with extremely useful experiences that one could not achieve through conventional methods. </p>
 				</MainSection>
-				<MainSection title='Work Experience' styleName='not-bottom'>
+				<MainSection title='Work Experience'>
 					<Listing
 						title='Doğuş Techonology - Front-end Developer'
 						location='Istanbul, Turkey'
