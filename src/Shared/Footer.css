@@ -18,3 +18,41 @@
     max-height: 13px;
     background-color: #002e5d;
 }
+
+.footer-contact-container
+{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box
+{
+    display: flex;
+    background-color: #79af13;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    color: #2b6ca3;
+}
+
+.contact-box
+{
+    display: flex;
+    min-width: 240px;
+    padding: 0px 10px;
+    justify-content: center;
+}
+
+.contact-box-content > p
+{
+    margin: 0;
+}
+
+.contact-box-content > .social-icon
+{
+    padding: 0;
+    margin: 3px;
+}
