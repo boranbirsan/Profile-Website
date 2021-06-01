@@ -1,0 +1,28 @@
+.contact-wrapper
+{
+    display: flex;
+    width: 50%;
+    max-width: 80%;
+    margin: auto;
+    padding: 0px 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #006990;
+}
+
+.info
+{
+    padding-right: 80px;
+}
+
+.contact
+{
+    justify-content: flex-start;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.social-icon-lg
+{
+    margin: 0px 5px;
+}

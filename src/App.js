@@ -7,6 +7,7 @@ import { Header, Footer, NotFound } from './Shared';
 
 import Home from './Home/Home';
 import CV from './CV/CV';
+import Contact from './Contact/Contact';
 
 function App() {
 	const location = useLocation();
@@ -18,7 +19,7 @@ function App() {
 					<Route exact path="/"><Home/></Route>
 					<Route exact path="/resume"><CV/></Route>
 					<Route exact path="/projects"></Route>
-					<Route exact path="/contact"></Route>
+					<Route exact path="/contact"><Contact /></Route>
 					<Route component={NotFound} />
 				</Switch>
 			</div>

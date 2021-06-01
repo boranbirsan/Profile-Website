@@ -68,7 +68,7 @@ function CV() {
 				<p>English (Native)</p>
 				<p style={{ paddingBottom: '15px' }}>Turkish (Native)</p>
 				<h6>Nationality</h6>
-				<p style={{ paddingBottom: '25px' }}>Turkish-American</p>
+				<p style={{ paddingBottom: '25px' }}>American-Turkish</p>
 				<div className='icon'>
 					<PowerSettingsNew className='pic' />
 				</div>
