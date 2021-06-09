@@ -31,7 +31,7 @@ function Contact() {
                 <SocialIcon className="social-icon-lg" url="https://twitter.com/Moran_with_a_B"/>
                 <SocialIcon className="social-icon-lg" url="https://www.instagram.com/angrybacn/"/>
             </div>
-            <Form/>
+            {/* <Form/> */}
         </div>
     );
 }

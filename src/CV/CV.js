@@ -15,11 +15,23 @@ function CV() {
 				</MainSection>
 				<MainSection title='Work Experience'>
 					<Listing
+						title='RefInDepot - Full Stack Developer'
+						location='Remote'
+						dates="January 2021 - Present"
+					>
+						<li className='font-1 no-margin' style={{paddingBottom: '5px'}}>Tools: .NET MVC, React, Spring, SQL</li>
+						<p className='font-1 no-margin'>Progression and Development of current .NET systems and database in order to optimize current features and fix bugs.</p>
+						<p className='font-1 no-margin'>Meanwhile, refactoring current codebase from .NET to React and spring systems from the ground up.</p>
+					</Listing>
+					<Listing
 						title='Doğuş Techonology - Front-end Developer'
 						location='Istanbul, Turkey'
-						dates="August 2020 - January 2021"
+						dates="January 2020 - January 2021"
 					>
-						<p className='font-1 no-margin'>test</p>
+						<li className='font-1 no-margin' style={{paddingBottom: '5px'}}>Tools: React, Angular, Spring, MongoDB</li>
+						<p className='font-1 no-margin'>Working for one of Turkey's biggest technology companies, I given the opportunity to work on Turkey's most significant e-commerce website 
+						(<a href="n11.com">n11</a>), gaining significant knowledge of the innerworkings for e-commerce management. I was also tasked with the UI development of the online management system for the the new pier, promenade, and ferry system being prepared in Istanbul
+						(<a href="galataport.com">Galataport</a>) </p>
 					</Listing>
 					<Listing
 						title='Flank Esports - Intern Web Developer'
@@ -33,6 +45,7 @@ function CV() {
 						location='Istanbul, Turkey'
 						dates="​July 2016 - August 2016"
 					>
+						<li className='font-1 no-margin' style={{paddingBottom: '5px'}}>Tools & Languages: C, C#, Lua, MQTT, TCP Sockets</li>
 						<p className='font-1 no-margin'>AirTies holds a summer internship program called SummerSeed. I was fortunate enough to intern during SummerSeed 2016, and got the pleasure of learning about computer networks and the steps of project development.</p>
 					</Listing>
 				</MainSection>
@@ -94,6 +107,7 @@ function CV() {
 				<h6>Tools and Skills</h6>
 				{/* <p className='sub-text'>click on a tag to find projects using that tag</p> */}
 				<div>
+					<p style={{ fontWeight: 'bold' }}>Best:</p>
 					<p>Web Development</p>
 					<p>Node.JS</p>
 					<p>Frontend</p>
@@ -102,9 +116,14 @@ function CV() {
 						<p>Angular</p>
 					</ul>
 					<p>Backend</p>
-
-					<p>Database Design</p>
+					<ul className='no-margin' style={{ paddingLeft: '15px' }}>
+						<p>Springboot</p>
+					</ul>
 					<p>NoSQL - MongoDB</p>
+					<br />
+
+					<p style={{ fontWeight: 'bold' }}>Intermediate:</p>
+					<p>Database Design</p>
 					<p>Reinforcement Learning</p>
 					<p>Game Development</p>
 					<ul className='no-margin' style={{ paddingLeft: '15px' }}>

@@ -1,16 +1,12 @@
 import './Projects.css';
-
 import React from 'react';
-import { Octokit } from "@octokit/core";
 
 import Listing from './Listing';
 import { WorkInProgress } from '../Shared';
 
 export default function Projects() {
 
-    const [state, ] = React.useState([]);
-
-    const something = {
+    const [state, ] = React.useState([/*{
         title: 'Dogtionary',
         repo_name: 'Dogtionary',
         description: '',
@@ -28,7 +24,7 @@ export default function Projects() {
             }
         ],
         patterns: [],
-    }
+    }*/]);
 
     return (
         <div>

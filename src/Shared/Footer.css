@@ -3,9 +3,10 @@
     position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 13%;
-    max-height: 130px;
+    height: 6vw;
+    min-height: 100px;
     background-color: #2b6ca3;
+    padding-bottom: 13px;
     color: white;
 }
 
@@ -23,8 +24,12 @@
 {
     display: flex;
     height: 100%;
+    min-height: 100%;
     align-items: center;
     justify-content: center;
+    max-width: 1040px;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 .icon-box
@@ -33,17 +38,59 @@
     background-color: #79af13;
     align-items: center;
     justify-content: center;
+    align-self: center;
     padding: 10px;
     border-radius: 50%;
     color: #2b6ca3;
+
+    width: 3vw;
+    height: 3vw;
+
+    max-width: 35px;
+    max-height: 35px;
+
+    min-width: 15px;
+    min-height: 15px;
+}
+
+@media only screen and (max-width: 1040px)
+{
+    .icon-box
+    {
+        display: none;
+    }
+
+    .footer-contact-container
+    {
+        justify-content: space-evenly;
+    }
 }
 
 .contact-box
 {
     display: flex;
-    min-width: 240px;
+    width: 240px;
+    min-width: fit-content;
     padding: 0px 10px;
     justify-content: center;
+}
+
+@media only screen and (max-width: 780px)
+{
+    .contact-box
+    {
+        justify-content: flex-start !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 540px)
+{
+    #footer
+    {
+        display: none;
+    }
 }
 
 .contact-box-content > p

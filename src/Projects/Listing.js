@@ -5,7 +5,7 @@ import testImg from '../Assets/Images/TestProjectImage.jpg';
 export default function Listing() {
     return (
         <div>
-            <img style={{ width: '50%', height: 'auto' }} src={testImg} />
+            <img style={{ width: '50%', height: 'auto' }} src={testImg} alt='test'/>
 
             <div className='listing-details'>
 
