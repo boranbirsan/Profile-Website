@@ -6,25 +6,22 @@ import { WorkInProgress } from '../Shared';
 
 export default function Projects() {
 
-    const [state, ] = React.useState([/*{
-        title: 'Dogtionary',
-        repo_name: 'Dogtionary',
-        description: '',
-        tags: ['web development', 'React', 'Html', 'CSS'],
-        media: [],
-        languages: ['Html', 'CSS', 'Javascript'],
-        tools: [
-            {
-                name: 'React',
-                url: 'https://reactjs.org',
-            },
-            {
-                name: 'Material-UI',
-                url: 'https://material-ui.com'
+    const [state, setState] = React.useState([]);
+    const [loading, setLoading] = React.useState(true);
+
+    React.useEffect(async () => {
+        await fetch('https://api.github.com/users/boranbirsan/repos', {
+        }).catch(err => {
+            throw new Error(err);
+        }).then(async response => {
+            if (response.ok) {
+                response.json().then(data => {
+                    setState(data.filter(ele => !ele.fork));
+                    setLoading(false);
+                });
             }
-        ],
-        patterns: [],
-    }*/]);
+        })
+    }, []);
 
     return (
         <div>
@@ -35,13 +32,13 @@ export default function Projects() {
                 </form>
             </div>
 
-            <div style={{ width: '70%', margin: 'auto' }}>
+            {!loading && <div style={{ width: '70%', margin: 'auto' }}>
                 {
                     state.length ? (
-                        state.map(ele => <Listing props={ele} />)
+                        state.map(repo => <Listing key={repo.name} repo={repo} />)
                     ) : <WorkInProgress title='UNDER CONSTRUCTION'><p>Until this is prepared, please feel free to view my publicly available projects on <a href='https://github.com/boranbirsan'>Github</a></p></ WorkInProgress>
                 }
-            </div>
+            </div>}
         </div>
     );
 }
